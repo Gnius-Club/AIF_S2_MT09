@@ -1,24 +1,290 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 9 : Dando Vida al Cubo Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 9 : Dando Vida al Cubo Interactivo</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Implementar la lógica de una narrativa interactiva en el Merge Cube.</li>
+                                        <li>Programar en Python las interacciones diseñadas en un storyboard previo.</li>
+                                        <li>Crear un prototipo funcional de Cubo AR a través de 'Vibe Coding' con un co-programador de IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización de la programación como fase de ejecución.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción a la implementación técnica del plan.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual del workflow de 'Vibe Coding' para la interacción.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Aplicación técnica de generación de código, implementación y depuración básica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Demostración de prototipos y retroalimentación sobre el proceso.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un prototipo de Cubo AR funcional donde al hacer clic en cada una de las 6 caras se muestra el texto y la imagen correspondientes al storyboard, implementado con scripts de Python.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a la plataforma Delightex para cada estudiante.</li>
+                                        <li>Storyboard (texto e imágenes) de la Misión 8 por cada equipo.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>1 Merge Cube y 1 dispositivo móvil por equipo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Xolo está preparado para generar scripts de Python basados en descripciones de 'Vibe Coding'.</li>
+                                                <li>Asegurar que los estudiantes tienen sus storyboards listos.</li>
+                                                <li>Preparar una escena básica de Delightex con un Merge Cube para los equipos.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender el ciclo de Vibe Coding -> Implementación -> Depuración para guiar a los equipos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional y contextualizar la misión como la fase de ejecución de un plan.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: transformar el storyboard en código.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Guionistas. Sus historias existen en papel. Hoy, las grabarán en el código. Es el momento de la ejecución. Tomarán sus storyboards y los convertirán en un prototipo funcional. Pasamos del 'qué' al 'cómo'. Su misión es programar la lógica que hará que su Cubo AR cuente su historia."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo con Xolo. Utilicen la estructura completa en el chat para la Misión 9."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la programación como la implementación de un plan previo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el código como el "pegamento" de la experiencia interactiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de 'Studio' de implementación pura. Tienen el plan, el texto y las imágenes. Ahora necesitan el 'pegamento' que lo une todo: el código. Utilizarán Python para programar que, al hacer clic en las diferentes caras del cubo, se muestre el texto y la imagen correspondientes a su storyboard. El objetivo es tener un Cubo AR interactivo y funcional al final de la clase."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo programar las interacciones de un Cubo de Realidad Aumentada en Python para implementar una narrativa diseñada previamente.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan el workflow de 'Vibe Coding' como co-programadores de IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo con Xolo para entender su rol como co-programador.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Su rol es el de director, el de Xolo es de programador eficiente. El proceso de 'Vibe Coding' es directo. Para entenderlo, pregúntenle a Xolo: <strong>'Xolo, explícame cómo funciona el Vibe Coding para programar las 6 caras de mi Cubo AR.'</strong> Él les explicará que no necesitan saber la sintaxis, solo describirle la lógica precisa para cada cara, y él generará los scripts. Este es el workflow para hoy."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el ciclo completo de describir la lógica, generar código, implementarlo y depurarlo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Interacción de Vibe Coding ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos usan sus storyboards para describir la lógica a Xolo, cara por cara, y recibir los scripts.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Tengan sus storyboards a mano. La organización es clave. Vayan cara por cara, de la 1 a la 6. Describan la 'vibe' de la interacción para cada cara a Xolo con precisión. Por ejemplo: 'Para la Cara 3, al hacer clic, muestra este texto y esta imagen'. Reciban el script y pasen a la siguiente cara."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación y Depuración ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos asignan los scripts y prueban el prototipo, depurando si es necesario.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Con los 6 scripts generados, viene la fase técnica. Asignen cada script a la cara correcta del cubo en el editor de Delightex. Una vez hecho, entren en 'Play Mode' y prueben metódicamente cada cara. Si una cara no responde como esperaban, el primer paso de depuración es simple: verifiquen que el script correcto está asignado a la cara correcta. Este es el error más común."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la demostración de los prototipos funcionales y la retroalimentación sobre el proceso de implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre los desafíos del proceso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en el proceso completo. ¿Cuál fue el mayor éxito que tuvieron? Por ejemplo, 'logramos que todo funcionara a la primera'. ¿Y el mayor desafío? Por ejemplo, 'tuvimos problemas asignando los scripts correctamente'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes hacen una demostración en vivo de su Cubo AR.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Es hora de la 'premiere'. En parejas, demuestren en vivo su Cubo AR interactivo. Guíen a su compañero a través de la historia, cara por cara. Compartan su mayor éxito y desafío en el proceso de implementación. El compañero prueba y prepara feedback."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback técnico y narrativo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para dar feedback, usen esta estructura: <strong>1. 'La interacción en la cara [...] me gustó porque...' 2. 'Una pregunta que tengo sobre el desafío que enfrentaron es...' 3. '¿Consideraron que el clic en la última cara provocara un efecto final?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, consolidando la experiencia del ciclo de producción completo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han completado el ciclo de producción: de la idea al storyboard y del storyboard al prototipo funcional. Han dirigido el proceso creativo y técnico. La próxima sesión será una práctica extendida para añadir una capa de sofisticación a sus cubos. Excelente ejecución."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
